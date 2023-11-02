@@ -28,5 +28,6 @@ public class Login1
 		driver.get(fLib.getDataFromProperties("url"));
 //		driver.findElement(By.id("user-name")).sendKeys(fLib.getDataFromProperties("user1"),Keys.TAB,fLib.getDataFromProperties("password"),Keys.ENTER);
 		ll.loginToApp(fLib.getDataFromProperties("user4"), fLib.getDataFromProperties("password"));
+		System.out.println("PK");
 	}
 }
