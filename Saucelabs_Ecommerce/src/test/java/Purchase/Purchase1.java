@@ -29,7 +29,7 @@ public class Purchase1
 		driver.findElement(By.xpath("//div[text()='Sauce Labs Fleece Jacket']/../../following-sibling::div/button[text()='Add to cart']")).click();
 		driver.findElement(By.id("shopping_cart_container")).click();
 		driver.findElement(By.id("checkout")).click();
-		driver.findElement(By.id("first-name")).sendKeys(eLib.getDataFromExcel("excelpath","Sheet1", 2, 0),Keys.TAB,eLib.getDataFromExcel("excelpath","Sheet1", 2, 1),Keys.TAB,eLib.getDataFromExcel("excelpath","Sheet1", 2, 2));
+		driver.findElement(By.id("first-name")).sendKeys(eLib.getDataFromExcel("excelpath","Sheet1", 1, 0),Keys.TAB,eLib.getDataFromExcel("excelpath","Sheet1", 1, 1),Keys.TAB,eLib.getDataFromExcel("excelpath","Sheet1", 1, 2));
 		driver.findElement(By.id("continue")).click();
 		driver.findElement(By.id("finish")).click();
 		String actual=driver.findElement(By.xpath("//h2[text()='Thank you for your order!']")).getText();

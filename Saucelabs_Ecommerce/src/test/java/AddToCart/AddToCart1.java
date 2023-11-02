@@ -16,7 +16,7 @@ import pomrepository.LoginPage;
 
 public class AddToCart1 
 {
-	
+	@Test(enabled=false)
 	public void AddToCart() throws IOException
 	{
 			FileUtility fLib=new FileUtility();
